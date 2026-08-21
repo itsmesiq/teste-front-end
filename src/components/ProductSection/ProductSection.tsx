@@ -20,7 +20,7 @@ function ProductSection() {
     const VISIBLE_PRODUCTS = 4;
 
     const handleNext = () => {
-        setCurrentIndex((current) => Math.min(current + 1, products.length - 4));
+        setCurrentIndex((current) => Math.min(current + 1, products.length - VISIBLE_PRODUCTS));
     };
 
     const handlePrevious = () => {
@@ -28,7 +28,7 @@ function ProductSection() {
     };
 
     const canGoPrevious = currentIndex > 0;
-    const canGoNext = currentIndex < products.length - 4;
+    const canGoNext = currentIndex < products.length - VISIBLE_PRODUCTS;
 
     useEffect(() => {
         async function loadProducts() {
