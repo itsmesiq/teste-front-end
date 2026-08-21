@@ -1,4 +1,4 @@
-import ProductSection from "./components/ProductSection/ProductSection";
+import ProductSection from "./components/ProductCarousel/ProductCarousel";
 
 function App() {
   return (
