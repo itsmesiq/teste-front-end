@@ -1,0 +1,33 @@
+@use './variables.scss' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Poppins:wght@300;400;500;600;700&family=Work+Sans:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: $font-family-primary;
+    color: $color-gray-dark;
+    background-color: $color-white;
+}
+
+button, input {
+    font: inherit;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
