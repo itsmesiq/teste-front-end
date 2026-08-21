@@ -1,0 +1,79 @@
+@use '../../styles/variables' as *;
+
+.product-card {
+    width: 100%;
+    max-width: 19rem;
+    padding: 0.75rem 1rem;
+    background-color: $color-white;
+    box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5625rem;
+
+    &__image {
+        width: 100%;
+        max-width: 16.875rem;
+        height: 15rem;
+        object-fit: contain;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__name {
+        font-size: 0.9375rem;
+        font-weight: $font-light;
+        color: $color-gray-dark;
+        margin: 0;
+    }
+
+    &__price-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.125rem;
+        margin: 0.75rem 0 0.4375rem;
+    }
+
+    &__price {
+        font-size: 1.25rem;
+        font-weight: $font-bold;
+        color: $color-gray-dark;
+    }
+
+    &__installment {
+        font-size: 0.75rem;
+        color: $color-gray-dark;
+        margin: 0;
+    }
+
+    &__shipping {
+        font-size: 0.75rem;
+        font-weight: $font-regular;
+        color: $color-blue;
+        margin: 0;
+    }
+
+    &__button {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin-top: 0.75rem;
+        background-color: $color-blue;
+        border-radius: 0.25rem;
+        border: none;
+
+        color: $color-white;
+        font-size: 0.875rem;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $color-dark-blue;
+        }
+    }
+}
