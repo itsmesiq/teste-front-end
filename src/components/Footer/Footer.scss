@@ -1,0 +1,97 @@
+@use '../../styles/variables.scss' as *;
+
+.footer {
+    width: 100%;
+
+    &__main {
+        background-color: #F4F4F4;
+        padding-block: 2.625rem;
+    }
+
+    &__info {
+        width: 100%;
+        max-width: 22.125rem;
+
+        > a img {
+            margin-bottom: 1.125rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.875rem;
+            font-weight: $font-light;
+            color: $color-gray-dark;
+        }
+    }
+
+    &__socials {
+        margin-top: 1.6875rem;
+        display: flex;
+        align-items: center;
+        gap: 1.625rem;
+    }
+
+    &__line {
+        width: 1px;
+        align-self: stretch;
+        background-color: #2828282E;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6.25rem;
+        color: #222222B5;
+    }
+
+    &__links-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        
+        h3 {
+            font-size: 1rem;
+            font-weight: $font-bold;
+            line-height: 100%;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: $font-family-secondary;
+            font-size: 0.875rem;
+            line-height: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        gap: 5.625rem;
+    }
+
+    &__copyright {
+        padding: 0.8125rem;
+
+        p {
+            margin: 0;
+            font-size: 0.8125rem;
+            font-weight: $font-light;
+            color: $color-gray-dark;
+            text-align: center;
+        }
+    }
+}
