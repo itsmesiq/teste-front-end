@@ -1,0 +1,59 @@
+@use '../../styles/variables.scss' as *;
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.375rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 0.625rem;
+        background-color: #F4F4F4;
+        box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.22);
+    }
+
+    &__icon {
+        width: 3.8125rem;
+        height: 3.8125rem;
+
+        background-color: #000;
+
+        mask-image: var(--category-icon);
+        mask-size: 3.8125rem 3.8125rem;
+        mask-position: center;
+        mask-repeat: no-repeat;
+
+        -webkit-mask-image: var(--category-icon);
+        -webkit-mask-size: 3.8125rem 3.8125rem;
+        -webkit-mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+    }
+
+    &__name {
+        font-size: 0.875rem;
+        font-weight: $font-medium;
+        color: $color-gray-dark;
+    }
+
+    &:hover {
+        .category-card__box {
+            background-color: $color-white;
+        }
+
+        .category-card__icon {
+            background-color: $color-dark-blue;
+        }
+
+        .category-card__name {
+            font-weight: $font-semi-bold;
+            color: $color-dark-blue;
+        }
+    }
+}

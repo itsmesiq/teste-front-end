@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Tecnologia",
+        "image": "./images/tech-icon.png",
+        "href": "/categoria/tecnologia"
+    },
+    {
+        "name": "Supermercado",
+        "image": "./images/supermarket-icon.png",
+        "href": "/categoria/supermercado"
+    },
+    {
+        "name": "Bebidas",
+        "image": "./images/drink-icon.png",
+        "href": "/categoria/bebidas"
+    },
+    {
+        "name": "Ferramentas",
+        "image": "./images/tools-icon.png",
+        "href": "/categoria/ferramentas"
+    },
+    {
+        "name": "Saúde",
+        "image": "./images/health-icon.png",
+        "href": "/categoria/saude"
+    },
+    {
+        "name": "Esportes e Fitness",
+        "image": "./images/fitness-icon.png",
+        "href": "/categoria/esportes-e-fitness"
+    },
+    {
+        "name": "Moda",
+        "image": "./images/fashion-icon.png",
+        "href": "/categoria/moda"
+    }
+]

@@ -1,0 +1,9 @@
+@use '../../styles/variables.scss' as *;
+
+.category-section {
+    display: flex;
+    justify-content: center;
+    gap: 2.625rem;
+    align-items: center;
+    margin-top: 2.4375rem;
+}
