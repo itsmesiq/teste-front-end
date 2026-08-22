@@ -10,7 +10,7 @@
             "highlight": false
         }
     ],
-    "imageUrl": "/images/main-banner.jpg",
-    "ctaLabel": "Ver produto",
-    "ctaHref": "/produto"
+    "image": "/images/main-banner.jpg",
+    "cta": "Ver produto",
+    "link": "/produto"
 }

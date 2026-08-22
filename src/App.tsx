@@ -11,7 +11,7 @@ function App() {
   return (
     <main>
       <Header />
-      <MainBanner {...mainBanner} />
+      <MainBanner banner={mainBanner} />
       <CategorySection />
       <ProductSection categories={true} />
       <ProductSection categories={false} />
