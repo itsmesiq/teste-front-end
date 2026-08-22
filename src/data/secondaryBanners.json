@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Parceiros",
+        "subtitle": [
+            {
+                "text": "Lorem ipsum dolor sit amet, consectetur",
+                "highlight": false
+            }
+        ],
+        "image": "/images/secondary-banner.jpg",
+        "cta": "Confira",
+        "link": "/parceiros"
+    },
+    {
+        "title": "Parceiros",
+        "subtitle": [
+            {
+                "text": "Lorem ipsum dolor sit amet, consectetur",
+                "highlight": false
+            }
+        ],
+        "image": "/images/secondary-banner.jpg",
+        "cta": "Confira",
+        "link": "/parceiros"
+    }
+]
