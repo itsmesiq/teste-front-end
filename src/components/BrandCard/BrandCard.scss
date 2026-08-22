@@ -1,0 +1,20 @@
+@use '../../styles/variables' as *;
+
+.brand-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13.1875rem;
+    height: 13.1875rem;
+    border-radius: 50%;
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.13);
+    transition: transform 0.5s ease-in-out;
+
+    &__logo {
+        width: 7.3125rem;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

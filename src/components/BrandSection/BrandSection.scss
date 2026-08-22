@@ -1,0 +1,21 @@
+@use '../../styles/variables' as *;
+
+.brand-section {
+    margin-bottom: 5.625rem;
+
+    &__title {
+        font-size: 1.875rem;
+        font-weight: $font-bold;
+        text-align: center;
+        color: $color-blue;
+        margin: 0 0 2rem;
+    }
+
+    &__brands {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.625rem;
+    }
+}
