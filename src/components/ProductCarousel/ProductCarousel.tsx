@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../../services/products";
 import type { Product } from "../../types/product";
 
-import arrowLeft from '../../assets/icons/arrow-left.svg';
-import arrowRight from '../../assets/icons/arrow-right.svg';
+import { ArrowLeftIcon, ArrowRightIcon } from '../../utils/icons';
 
 import ProductCard from "../ProductCard/ProductCard";
 import './ProductCarousel.scss';
@@ -55,8 +54,8 @@ function ProductCarousel() {
 
     return (
         <div className="product-carousel__carousel">
-            <button type="button" className="product-carousel__arrow" onClick={handlePrevious} disabled={!canGoPrevious} aria-label="Produtos anteriores">
-                <img src={arrowLeft} alt="" />
+            <button type="button" onClick={handlePrevious} disabled={!canGoPrevious} aria-label="Produtos anteriores" className={`product-carousel__arrow ${canGoPrevious ? '' : 'product-carousel__arrow--disabled'}`}>
+                <img src={ArrowLeftIcon} alt="" />
             </button>
             <div className="product-carousel__viewport">
                 <div className="product-carousel__track" style={{ transform: `translateX(-${currentIndex * CARD_STEP}rem)` }}>
@@ -73,8 +72,8 @@ function ProductCarousel() {
                     })}
                 </div>
             </div>
-            <button type="button" className="product-carousel__arrow" onClick={handleNext} disabled={!canGoNext} aria-label="Próximos produtos">
-                <img src={arrowRight} alt="" />
+            <button type="button" onClick={handleNext} disabled={!canGoNext} aria-label="Próximos produtos" className={`product-carousel__arrow ${canGoNext ? '' : 'product-carousel__arrow--disabled'}`} >
+                <img src={ArrowRightIcon} alt="" />
             </button>
         </div>
     );

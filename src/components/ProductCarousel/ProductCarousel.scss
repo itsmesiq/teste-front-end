@@ -1,45 +1,6 @@
 @use '../../styles/variables' as *;
 
 .product-carousel {
-    &__heading {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2.125rem;
-    }
-
-    &__title {
-        font-size: 1.875rem;
-        font-weight: $font-bold;
-        color: $color-blue;
-        text-align: center;
-        margin: 0;
-    }
-
-    &__line {
-        width: 100%;
-        max-width: 22.5rem;
-        height: 1px;
-        background-color: #DEDEDE;
-    }
-
-    &__link {
-        font-size: 0.9375rem;
-        font-weight: $font-bold;
-        color: $color-gray-dark;
-        display: block;
-        width: fit-content;
-        margin: 0 auto;
-        text-decoration: underline;
-        text-decoration-color: transparent;
-        text-underline-offset: 4px;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-            text-decoration-color: $color-gray-dark;
-        }
-    }
-
     &__carousel {
         display: flex;
         justify-content: center;
@@ -79,5 +40,11 @@
         background-color: $color-white;
         border-radius: 50%;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &__arrow--disabled {
+        background-color: #F6F5F2;
+        box-shadow: none;
+        pointer-events: none;
     }
 }
