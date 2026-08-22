@@ -1,0 +1,102 @@
+@use '../../styles/variables.scss' as *;
+
+.newsletter {
+    background-color: $color-purple;
+    padding-block: 2.5rem;
+    margin-top: 2.8125rem;
+
+    &__container {
+        width: 100%;
+        max-width: $container-width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 32.1875rem;
+        color: $color-white;
+        font-size: 0.875rem;
+        font-weight: $font-light;
+        line-height: 1.125rem;
+
+        h2 {
+            font-family: $font-family-tertiary;
+            font-size: 2rem;
+            font-weight: $font-semi-bold;
+            line-height: 120%;
+            margin:0 0 0.5rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    &__form-fields {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        input {
+            width: 100%;
+            height: 2.625rem;
+            max-width: 14.5625rem;
+            border-radius: 0.5rem;
+            background-color: $color-white;
+            border: 1px solid #E7E7E7;
+            padding-left: 1.5rem;
+        }
+
+        input::placeholder {
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            color: #676767;
+        }
+
+        input[type='text']:focus,
+        input[type='email']:focus {
+            outline: none;
+            border: 2px solid $color-yellow;
+        }
+
+        button {
+            font-size: 0.875rem;
+            font-weight: $font-semi-bold;
+            line-height: 0.75rem;
+            color: #161615;
+            padding: 0.9375rem 2.5rem;
+            background-color: $color-yellow;
+            border-radius: 0.5rem;
+            border: none;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.875rem;
+        color: $color-white;
+        line-height: 150%;
+
+        input[type='checkbox'] {
+            width: 0.9375rem;
+            height: 0.9375rem;
+            border-radius: 1px;
+            background-color: $color-white;
+            border: 1px solid #8C342B;
+            margin: 0;
+            accent-color: $color-yellow;
+        }
+    }
+}
