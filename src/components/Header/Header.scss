@@ -65,6 +65,11 @@
             font-weight: $font-medium;
         }
 
+        input[type='search']:focus{
+            outline: none;
+            border: 2px solid $color-dark-blue;
+        }
+
         button {
             position: absolute;
             top: 50%;

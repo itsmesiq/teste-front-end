@@ -24,8 +24,8 @@ function Header() {
                     <a href="/" aria-label='Econverse Home'>
                         <img src={Logo} alt="" />
                     </a>
-                    <form className='header__search'>
-                        <input type="search" placeholder="O que você está buscando?" />
+                    <form action="/search" method="GET" className='header__search'>
+                        <input type="search" id='search-input' name='q' placeholder="O que você está buscando?" />
                         <button type="submit" aria-label="Buscar"><img src={SearchIcon} alt="" /></button>
                     </form>
                     <div className='header__actions'>
