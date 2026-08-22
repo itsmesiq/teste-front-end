@@ -1,0 +1,16 @@
+{
+    "title": "Venha conhecer nossas promoções",
+    "subtitle": [
+        {
+            "text": "50% OFF",
+            "highlight": true
+        },
+        {
+            "text": "nos produtos",
+            "highlight": false
+        }
+    ],
+    "imageUrl": "/images/main-banner.jpg",
+    "ctaLabel": "Ver produto",
+    "ctaHref": "/produto"
+}
