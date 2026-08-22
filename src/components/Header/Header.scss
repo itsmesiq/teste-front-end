@@ -1,0 +1,125 @@
+@use '../../styles/variables' as *;
+
+.header {
+    width: 100%;
+
+    &__container {
+        width: 100%;
+        max-width: $container-width;
+        margin: 0 auto;
+    }
+
+    &__benefits {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 7.4375rem;
+        padding-block: 0.4375rem;
+        border-bottom: 1px solid #f0f0f0;
+        margin: 0 auto;
+
+        &__benefit {
+            display: flex;
+            align-items: center;
+            gap: 0.5625rem;
+
+            p{
+                font-size: 0.75rem;
+                font-weight: $font-medium;
+                color: $color-gray-light;
+                margin: 0;
+            }
+
+            span {
+                font-weight: $font-semi-bold;
+                color: $color-dark-blue;
+            }
+        }
+    }
+
+    &__main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 0.75rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    &__search {
+        position: relative;
+        width: fit-content;
+
+        input {
+            width: 39.375rem;
+            height: 3rem;
+            border-radius: 0.625rem;
+            border: none;
+            background-color: #F6F5F2;
+            padding-left: 1rem;
+        }
+
+        input::placeholder {
+            font-size: 0.875rem;
+            color: $color-gray-light;
+            font-weight: $font-medium;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            width: 1.75rem;
+            height: 1.75rem;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5.6875rem;
+        padding-block: 0.625rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            text-underline-offset: 4px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: $font-semi-bold;
+            color: $color-gray-light;
+            transition: all 0.3s ease-in-out;
+
+            &.header__navigation--highlight {
+                color: $color-dark-blue;
+            }
+
+            &:hover {
+                text-decoration-color: $color-gray-light;
+
+                &.header__navigation--highlight {
+                    text-decoration-color: $color-dark-blue;
+                }
+            }
+        }
+    }
+
+    &__navigation--highlight {
+        color: $color-dark-blue;
+        text-decoration-color: $color-dark-blue;
+    }
+}

@@ -1,0 +1,12 @@
+export { default as AccountIcon } from '../assets/icons/account.svg';
+export { default as ArrowLeftIcon } from '../assets/icons/arrow-left.svg';
+export { default as ArrowRightIcon } from '../assets/icons/arrow-right.svg';
+export { default as CreditCardIcon } from '../assets/icons/credit-card.svg';
+export { default as CrownIcon } from '../assets/icons/crown.svg';
+export { default as Logo } from '../assets/icons/logo-econverse.svg';
+export { default as OrdersIcon } from '../assets/icons/orders.svg';
+export { default as ShieldCheckIcon } from '../assets/icons/shield-check.svg';
+export { default as SearchIcon } from '../assets/icons/search.svg';
+export { default as ShoppingCartIcon } from '../assets/icons/shopping-cart.svg';
+export { default as TruckIcon } from '../assets/icons/truck.svg';
+export { default as WishlistIcon } from '../assets/icons/wishlist.svg';
