@@ -100,31 +100,16 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
-            text-decoration: underline;
-            text-decoration-color: transparent;
-            text-underline-offset: 4px;
             text-transform: uppercase;
+            text-decoration: none;
             font-size: 0.75rem;
             font-weight: $font-semi-bold;
             color: $color-gray-light;
             transition: all 0.3s ease-in-out;
 
-            &.header__navigation--highlight {
+            &:hover {
                 color: $color-dark-blue;
             }
-
-            &:hover {
-                text-decoration-color: $color-gray-light;
-
-                &.header__navigation--highlight {
-                    text-decoration-color: $color-dark-blue;
-                }
-            }
         }
-    }
-
-    &__navigation--highlight {
-        color: $color-dark-blue;
-        text-decoration-color: $color-dark-blue;
     }
 }

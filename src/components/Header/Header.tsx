@@ -49,7 +49,7 @@ function Header() {
                     <a href="/livros">Livros</a>
                     <a href="/moda">Moda</a>
                     <a href="/lancamentos">Lançamentos</a>
-                    <a href="/ofertas" className='header__navigation--highlight'>Ofertas do Dia</a>
+                    <a href="/ofertas">Ofertas do Dia</a>
                     <a href="/assinatura"><img src={CrownIcon} alt="" />Assinatura</a>
                 </nav>
             </div>
