@@ -5,6 +5,7 @@ import type { Product } from "../../types/product";
 import { ArrowLeftIcon, ArrowRightIcon } from '../../utils/icons';
 
 import ProductCard from "../ProductCard/ProductCard";
+import ProductModal from "../ProductModal/ProductModal";
 import './ProductCarousel.scss';
 
 function ProductCarousel() {
@@ -12,6 +13,7 @@ function ProductCarousel() {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
     const CARD_WIDTH = 19;
     const CARD_GAP = 1.125;
@@ -66,7 +68,7 @@ function ProductCarousel() {
 
                         return (
                             <div className={`product-carousel__item ${isVisible ? 'product-carousel__item--visible' : ''}`} key={product.productName} >
-                                <ProductCard product={product} />
+                                <ProductCard product={product} onClick={() => setSelectedProduct(product)} />
                             </div>
                         );
                     })}
@@ -75,6 +77,10 @@ function ProductCarousel() {
             <button type="button" onClick={handleNext} disabled={!canGoNext} aria-label="Próximos produtos" className={`product-carousel__arrow ${canGoNext ? '' : 'product-carousel__arrow--disabled'}`} >
                 <img src={ArrowRightIcon} alt="" />
             </button>
+
+            {selectedProduct && (
+                <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            )}
         </div>
     );
 }

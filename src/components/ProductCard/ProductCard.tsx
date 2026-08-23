@@ -4,9 +4,10 @@ import './ProductCard.scss';
 
 interface ProductCardProps {
     product: Product;
+    onClick: () => void;
 }
 
-function ProductCard({ product }: ProductCardProps) {
+function ProductCard({ product, onClick }: ProductCardProps) {
     const installment = calculateInstallment(product.price, 2);
 
     return (
@@ -20,7 +21,7 @@ function ProductCard({ product }: ProductCardProps) {
                     <p className='product-card__installment'>ou 2x de {formatCurrency(installment)} sem juros</p>
                 </div>
                 <p className='product-card__shipping'>Frete Grátis</p>
-                <button className='product-card__button'>Comprar</button>
+                <button type='button' className='product-card__button' onClick={onClick}>Comprar</button>
             </div>
         </article>
     )
