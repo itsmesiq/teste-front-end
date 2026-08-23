@@ -48,3 +48,31 @@
         pointer-events: none;
     }
 }
+
+@media (max-width: $breakpoint-md) {
+    .product-carousel {
+        &__carousel {
+            gap: 0.5rem;
+        }
+
+        &__viewport {
+            padding: 1rem 0.5rem;
+        }
+
+        &__track {
+            gap: 0.75rem;
+        }
+
+        &__item {
+            flex: 0 0 60%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .product-carousel {
+        &__item {
+            flex: 0 0 80%;
+        }
+    }
+}

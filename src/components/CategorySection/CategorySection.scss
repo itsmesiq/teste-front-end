@@ -6,4 +6,39 @@
     gap: 2.625rem;
     align-items: center;
     margin: 2.4375rem 0 5.625rem;
+    padding-inline: 1rem;
+}
+
+@media (max-width: $breakpoint-xl){
+    .category-section {
+        gap: 1.8rem;
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .category-section {
+        padding-inline: 1rem;
+        gap: 2rem;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-section {
+        gap: 1.25rem;
+    }
+
+    .category-card {
+        &__box {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        &__icon {
+            width: 3rem;
+            height: 3rem;
+            background-size: 3rem 3rem;
+        }
+    }
 }

@@ -19,3 +19,25 @@
         gap: 2.625rem;
     }
 }
+
+@media (max-width: $breakpoint-lg) {
+    .brand-section {
+        &__title {
+            font-size: 1.5rem;
+            white-space: nowrap;
+        }
+
+        &__brands {
+            flex-wrap: wrap;
+            padding-inline: 1rem;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-sm) {
+    .brand-section {
+        &__brands {
+            gap: 1.25rem;
+        }
+    }
+}

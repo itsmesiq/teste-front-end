@@ -75,3 +75,33 @@
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 85.04%);
     }
 }
+
+@media (max-width: $breakpoint-xl) {
+    .banners-grid {
+        padding-inline: 1rem;
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .banners-grid {
+        grid-template-columns: 1fr;
+        margin-block: 3rem;
+
+        &__item {
+            height: 18rem;
+        }
+
+        &__content {
+            margin: 1.5rem;
+            max-width: 14rem;
+        }
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__cta {
+            margin-top: 1rem;
+        }
+    }
+}

@@ -78,3 +78,48 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-sm){
+    .main-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__content {
+            padding: 1.5rem;
+        }
+
+        &__title {
+            font-size: 2.2rem;
+            line-height: 3rem;
+            margin: 0 0 0.5rem;
+            text-align: left;
+        }
+
+        &__subtitle {
+            font-size: 1.5rem;
+            text-align: left;
+        }
+
+        &__cta {
+            width: fit-content;
+            margin-top: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-yellow;
+            padding: 0.8125rem 3.375rem;
+            border-radius: 0.3125rem;
+            font-size: 1rem;
+            font-weight: $font-semi-bold;
+            color: $color-purple;
+            text-decoration: none;
+            transition: transform 0.5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+}

@@ -57,3 +57,16 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-xl){
+    .category-card {
+        &__box {
+            width: 7.5rem;
+            height: 7.5rem;
+        }
+
+        &__name {
+            font-size: 0.83rem;
+        }
+    }
+}

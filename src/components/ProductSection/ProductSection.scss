@@ -86,3 +86,45 @@
         display: none;
     }
 }
+
+@media (max-width: $breakpoint-xl){
+    .product-section {
+        &__container{
+            padding-inline: 1rem;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .product-section {
+        &__title {
+            font-size: 1.5rem;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .product-section {
+        &__heading {
+            gap: 1rem;
+        }
+
+        &__line {
+            max-width: 8.5rem;
+        }
+
+        &__category {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-sm) {
+    .product-section {
+        &__categories{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 2.5rem);
+        }
+    }
+}
